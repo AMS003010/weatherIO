@@ -11,10 +11,11 @@ This is a console weather application written in c++. It fetches weather informa
 * cpprestsdk
 
 
-### Clone and Run ###
+### How to Run ###
     git clone https://github.com/AMS003010/weatherIO.git
-    cd weatherIO\x64\Debug
-    c++ mini project.exe
+    vcpkg install cpprestsdk
+    g++ -std=c++11 -o weather_app main.cpp weather.cpp -lcpprest
+    ./weather_app
 
 ### User Customization ###
 See Weather.h<br/>
